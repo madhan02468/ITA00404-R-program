@@ -1,0 +1,36 @@
+# Create Numeric Vector
+num <- c(10, 20, 30, 40, 50)
+
+# Create Character Vector
+char <- c("Apple", "Banana", "Mango")
+
+# Create Logical Vector
+logic <- c(TRUE, FALSE, TRUE)
+
+# Display Numeric Vector
+cat("Numeric Vector:\n")
+print(num)
+cat("Type:", typeof(num), "\n\n")
+
+# Display Character Vector
+cat("Character Vector:\n")
+print(char)
+cat("Type:", typeof(char), "\n\n")
+
+# Display Logical Vector
+cat("Logical Vector:\n")
+print(logic)
+cat("Type:", typeof(logic), "\n")
+Numeric Vector:
+[1] 10 20 30 40 50
+Type: double
+
+OUTPUT
+
+Character Vector:
+[1] "Apple" "Banana" "Mango"
+Type: character
+
+Logical Vector:
+[1] TRUE FALSE TRUE
+Type: logical
