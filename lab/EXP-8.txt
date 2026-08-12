@@ -1,0 +1,12 @@
+set.seed(10)
+
+x <- rnorm(20, mean = 50, sd = 10)
+
+print(x)
+count <- sum(x > 50)
+
+cat("Numbers greater than 50:", count)
+
+OUTPUT:
+[1] 50.18 49.42 36.29 54.81 45.67 ...
+Numbers greater than 50: 9

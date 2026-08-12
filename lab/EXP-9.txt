@@ -1,0 +1,7 @@
+plot(0, 0,
+     xlim = c(0, 10),
+     ylim = c(0, 10),
+     type = "n",
+     xlab = "X Axis",
+     ylab = "Y Axis",
+     main = "Empty Plot")
