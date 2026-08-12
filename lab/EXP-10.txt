@@ -1,0 +1,31 @@
+exam_data <- data.frame(
+  name = c("John", "Peter", "Mary"),
+  score = c(80, 70, 90),
+  attempts = c(2, 3, 1),
+  qualify = c(TRUE, FALSE, TRUE)
+)
+
+print(exam_data)
+
+print(exam_data$score)
+
+exam_data$grade <- c("B", "C", "A")
+
+exam_data <- rbind(
+  exam_data,
+  data.frame(name="David", score=85, attempts=2,
+             qualify=TRUE, grade="B")
+)
+
+exam_data <- exam_data[order(exam_data$score), ]
+
+print(exam_data)
+
+write.csv(exam_data, "exam_data.csv", row.names = FALSE)
+
+OUTPUT :
+    name score attempts qualify grade
+2  Peter    70        3   FALSE     C
+1   John    80        2    TRUE     B
+4  David    85        2    TRUE     B
+3   Mary    90        1    TRUE     A
