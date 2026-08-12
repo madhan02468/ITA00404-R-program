@@ -1,0 +1,27 @@
+ data(women)
+
+height <- factor(women$height)
+
+print(height)
+print(levels(height))
+
+# Random LETTERS sample
+letters_sample <- sample(LETTERS, 5)
+
+letters_factor <- factor(letters_sample)
+
+print(letters_sample)
+print(letters_factor)
+print(levels(letters_factor))
+
+OUTPUT
+[1] 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72
+
+[1] "58" "59" "60" "61" "62" "63" "64" "65" "66" "67" "68" "69" "70" "71" "72"
+
+[1] "A" "F" "M" "R" "Z"
+
+[1] A F M R Z
+Levels: A F M R Z
+
+[1] "A" "F" "M" "R" "Z"
