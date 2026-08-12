@@ -1,0 +1,23 @@
+mylist <- list(
+  numbers = c(10, 20, 30),
+  matrix = matrix(1:4, nrow = 2),
+  add = function(x, y) x + y
+)
+
+print(mylist)
+
+print(mylist$add(5, 3))
+
+OUTPUT:
+$numbers
+[1] 10 20 30
+
+$matrix
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+$add
+function(x, y) x + y
+
+[1] 8
